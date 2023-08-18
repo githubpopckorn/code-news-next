@@ -1,34 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Code News 🤩
 
-First, run the development server:
+Prueba técnica propuesta por [uizard](https://uizard.io/).
+
+Es un clone de la web de Hacker News (https://news.ycombinator.com)
+
+
+## Herramientas de desarrollo
+
+ - Next Js
+ - Zustand
+ - NextUi & Tailwind CSS
+ - Typescript
+
+
+
+## ¿Cómo levantar el proyecto?
+
+Es sencillo, realiza un git clone del proyecto después ejecuta los siguientes comandos:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  cd ./project-folder
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+  npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Authors
 
-To learn more about Next.js, take a look at the following resources:
+- [@githubpopckorn](https://github.com/githubpopckorn)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Feedback
 
-## Deploy on Vercel
+Si tienes algun feedback o recomendación puedes encontrarme en santy_lopez@live.com.ar
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🚀 About Me
+Full stack developer...
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Screenshots
+
+<div style="text-align:center">
+
+<h3>Dark Mode 😎</h3>
+
+<img src="./public/images/hn-demo1.png" width="1200"/>
+<p></p>
+<img src="./public/images/hn-demo2.png" width="1200"/>
+
+<h3>Light Mode 🤩</h3>
+
+<img src="./public/images/hn-demo3.png" width="1200"/>
+<p></p>
+<img src="./public/images/hn-demo4.png" width="1200"/>
+
+<h3>Loader ⭕</h3>
+<img src="./public/images/hn-demo5.png" width="1200"/>
+</div>

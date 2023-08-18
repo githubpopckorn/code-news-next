@@ -2,26 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Para ocultar la barra de desplazamiento en Firefox */
+nav::-moz-scrollbar {
+    width: 0;
+    background: transparent; /* Establecer en transparente para hacerlo invisible */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Para ocultar la barra de desplazamiento en Chrome, Safari y Edge */
+nav::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Personalizar la barra de desplazamiento en Firefox */
+nav {
+    scrollbar-width: thin; /* O "none" si deseas ocultarla */
+    scrollbar-color: rebeccapurple; /* Cambia a tus colores preferidos */
+}
+
+/* Personalizar la barra de desplazamiento en Chrome, Safari y Edge */
+nav::-webkit-scrollbar {
+    width: 5px; /* Ajusta el ancho a tu gusto */
+}
+
+nav:hover::-webkit-scrollbar-thumb {
+    background-color: #DEDDE0; /* Cambia al color que prefieras para el "pulgar" de la barra */
+    border-radius: 6px; /* Añade bordes redondeados si lo prefieres */
+    /*border: 2px solid #DEDDE0; /* Añade un borde con el mismo color que el track para que se fusione */
+}
+
+nav::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Inicialmente transparente */
+    border-radius: 6px; 
+    border: 2px solid transparent; /* Asegúrate de que el borde también sea transparente */
 }
